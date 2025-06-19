@@ -1,0 +1,105 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.three-bg {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 30, 30, 0.35);
+  color: #fff;
+  text-align: center;
+}
+
+.city-form {
+  margin: 20px 0;
+  display: flex;
+}
+
+.city-form input {
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 160px;
+}
+
+.city-form button {
+  padding: 10px 16px;
+  border: none;
+  background: #0ea5e9;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.city-form button:hover {
+  background: #0369a1;
+}
+
+.weather-card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 24px;
+  width: 300px;
+  margin-top: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.0px);
+}
+
+.weather-card h2 {
+  margin: 0 0 10px 0;
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-card .details {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: #ef4444;
+}
+
+@media (max-width: 600px) {
+  .weather-card {
+    width: 90vw;
+    padding: 14px;
+  }
+  .city-form input {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+}
