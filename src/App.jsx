@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import WeatherCard from "./components/WeatherCard";
 import ThreeDBackground from "./components/ThreeDBackground";
 
-const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY"; // Replace with your API key
+const API_KEY = "9ab5ed8e2431b96808a0715ecdd215ba"; // Replace with your API key
 
 export default function App() {
   const [city, setCity] = useState("");
